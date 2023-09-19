@@ -1,0 +1,77 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "cross-env UMI_ENV=prod umi build",
+    "build:dev": "cross-env UMI_ENV=dev umi build",
+    "build:test": "cross-env UMI_ENV=test umi build",
+    "build:prod": "cross-env UMI_ENV=prod umi build",
+    "build:space": "cross-env ANALYZE=1 UMI_ENV=prod umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "tep2": "node template2.js",
+    "tep1": "node template1.js",
+    "clean": "rimraf ./node_modules",
+    "lint": "umi g tmp && npm run lint:js && npm run lint:prettier",
+    "lint:prettier": "prettier --check \"**/*\" --end-of-line auto",
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty ./src"
+  },
+  "gitHooks": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@ahooksjs/use-url-state": "2.5.7",
+    "@ant-design/pro-card": "^1.14.12",
+    "@ant-design/pro-layout": "6.21.1",
+    "@ant-design/pro-table": "2.43.0",
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
+    "@umijs/preset-react": "^1.8.17",
+    "@umijs/test": "^3.5.10",
+    "ahooks": "2.6.1",
+    "classnames": "2.2.6",
+    "echarts": "^5.1.2",
+    "echarts-for-react": "^3.0.1",
+    "lint-staged": "10.0.7",
+    "lodash": "4.17.20",
+    "mockjs": "1.1.0",
+    "react": "17.x",
+    "react-dom": "17.x",
+    "react-spring": "8.0.27",
+    "ts-md5": "^1.2.9",
+    "umi": "^3.5.10",
+    "yorkie": "2.0.0"
+  },
+  "devDependencies": {
+    "@alitajs/keep-alive": "2.6.10",
+    "@types/classnames": "2.2.10",
+    "@types/echarts": "^4.9.10",
+    "@types/lodash": "^4.14.171",
+    "@types/mockjs": "1.0.3",
+    "@types/qs": "6.9.6",
+    "@umijs/fabric": "2.6.2",
+    "cross-env": "7.0.2",
+    "eslint": "7.29.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "shevdc-component": "^0.0.1-alpha.2",
+    "husky": "6.0.0",
+    "lint-staged": "10.0.7",
+    "prettier": "2.3.2",
+    "stylelint": "13.13.1"
+  }
+}

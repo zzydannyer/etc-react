@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charSet="utf-8" />
+  <meta name="renderer" content="webkit">
+  <title>上海市机电设备国内招标评标专家培训平台</title>
+  <link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/2.9.12/skins/default/aliplayer-min.css" />
+  <script type="text/javascript" charset="utf-8" src="//g.alicdn.com/de/prismplayer/2.9.12/aliplayer-min.js"></script>
+  <!-- <script type="text/javascript" src="//player.alicdn.com/js/detection.min.js"></script> -->
+
+  <!-- <script src="//g.alicdn.com/code/lib/react/16.12.0/umd/react.production.min.js"></script>
+  <script src="//g.alicdn.com/code/lib/react-dom/16.12.0/umd/react-dom.production.min.js"></script> -->
+  <script src="<%= context.config.publicPath %>browserCheck.js"></script>
+  <script src="<%= context.config.publicPath %>aliyun-upload-sdk-1.5.2.min.js"></script>
+  <script src="<%= context.config.publicPath %>aliyun-oss-sdk-6.13.0.min.js"></script>
+  <style>
+    .gujia{
+      position: absolute;
+      z-index: 9999;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: url('https://evdata-front.oss-cn-shanghai.aliyuncs.com/common/skeleton-control.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <div class="gujia" id="gujia">
+  </div>
+</body>
+
+</html>

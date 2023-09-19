@@ -1,0 +1,99 @@
+.trainCard {
+  width: 100%;
+  margin: 20px 0px;
+  .train {
+    width: 90%;
+    height: 280px;
+
+    background: #ffffff;
+    border-radius: 8px;
+    position: relative;
+    .right {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      .notStart {
+        color: #ccc;
+      }
+    }
+    .introduce {
+      padding-right: 5%;
+      .left {
+        // width: 80%;
+        .image {
+          width: 240px;
+        }
+        .con {
+          .title {
+            margin-bottom: 20px;
+            color: #3e3e3e;
+            font-weight: 400;
+            font-size: 18px;
+          }
+          .time {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #a0a9bb;
+            font-weight: 400;
+            font-size: 14px;
+          }
+          .score{
+            color: #a0a9bb;
+            margin-bottom: 20px;
+          }
+          .passing-score{
+            display: inline-block;
+            margin-left: 30px;
+          }
+          .result {
+            .res {
+              margin-right: 15px;
+              color: #a0a9bb;
+              font-weight: 400;
+              font-size: 14px;
+            }
+            .check {
+              margin-right: 15px;
+              color: #2f90ff;
+              font-weight: 400;
+              font-size: 14px;
+            }
+            .exam {
+              color: #a0a9bb;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .toExam {
+        margin-right: 40px;
+        width: 200px;
+        .btn {
+          padding: 10px 20px;
+          color: #2f90ff;
+          font-size: 14px;
+          background: #e0f1ff;
+          border-radius: 8px;
+          cursor: pointer;
+          font-size: 16px;
+          &:hover {
+            color: #fff;
+            background: #2f90ff;
+          }
+        }
+        .btn-default {
+          background-color: gray;
+          cursor: no-drop;
+          color: #fff;
+          &:hover {
+            color: #fff;
+            background: gray;
+          }
+        }
+      }
+      .trainCard-txt{
+        width: 100px;
+      }
+    }
+  }
+}

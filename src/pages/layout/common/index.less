@@ -1,0 +1,104 @@
+.animated {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+  .rumtime-keep-alive-layout-no,
+  .rumtime-keep-alive-layout {
+    height: 100%;
+  }
+}
+.ant-pro-global-header-layout-side > div {
+  overflow: hidden;
+}
+
+.base-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  .ant-tabs {
+    flex: 1;
+    border: none;
+  }
+  .ant-tabs-nav {
+    margin-bottom: 0 !important;
+    &:before {
+      border-bottom: none !important;
+      content: none !important;
+    }
+  }
+  .dropdown-link {
+    margin-right: 20px;
+  }
+}
+.ant-pro-sider .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .fa + span {
+  display: none;
+}
+.ant-pro-sider .ant-menu-inline-collapsed > .ant-menu-item >.ant-menu-title-content .ant-pro-menu-item .fa + span {
+  display: none;
+}
+.ant-menu-submenu-title .fa {
+  min-width: 14px;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+    margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.3s;
+}
+
+.ant-design-pro .ant-pro-sider-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+}
+.layout {
+  margin: 0 !important;
+}
+.layout > .ant-pro-page-container-warp > .ant-page-header {
+  position: fixed;
+  top: 0px;
+  left: 228px;
+  z-index: 999;
+  width: calc(100% - 228px);
+  padding: 4px 16px;
+  color: #fff;
+  background-color: #f1f2f6;
+  box-shadow: 0 2px 8px #f0f1f2;
+  .ant-page-header-heading-title {
+    color: #3e3e3e;
+    font-size: 15px;
+
+    letter-spacing: 2px;
+  }
+}
+.acr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .headerRender {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    .headertile {
+      color: #3e3e3e;
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+  }
+}
+.ant-pro-page-container-children-content {
+  margin: 20px 20px 0 !important;
+}
+.histor {
+  margin-top: 15px;
+}
+.ant-pro-sider-logo {
+  justify-content: center;
+}
